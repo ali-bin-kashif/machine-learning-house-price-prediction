@@ -163,7 +163,7 @@ with col3:
     bathrooms = st.number_input('Enter the number of bathrooms', format='%d', step=1, min_value=1, max_value=15)
 
 # Square yards input
-sq_yards = st.number_input('Enter the square yards of the house', format='%d', step=1, min_value=1)
+sq_yards = st.number_input('Enter the square yards of the house', format='%d', step=1, min_value=40, max_value=5000)
 
 # Using columns for the purpose and property type
 col4, col5 = st.columns(2)
@@ -191,7 +191,7 @@ if st.button('Predict House Price'):
 st.markdown(
     """
     <div class='footer'>
-        Powered by AI | <a href='https://yourwebsite.com'>Your Company</a> | © 2024
+        Made by Ali | <a href='https://ali-bin-kashif-portfolio.vercel.app'>Visit Website</a> | © 2024
     </div>
     """, unsafe_allow_html=True
 )
